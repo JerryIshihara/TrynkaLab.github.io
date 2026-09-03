@@ -1,0 +1,25 @@
+{
+  "name": "rspress-doc-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:portal && npm run build:sc-blipper && npm run build:tglow",
+    "build:portal": "rspress build",
+    "build:sc-blipper": "rspress build -c software/sc-blipper/rspress.config.ts",
+    "build:tglow": "rspress build -c software/tglow/rspress.config.ts",
+    "dev": "rspress dev",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "@rspress/core": "^2.0.19"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^6.0.3"
+  }
+}

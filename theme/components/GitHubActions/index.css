@@ -1,0 +1,52 @@
+.github-actions {
+  display: flex;
+}
+
+.github-action {
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--rp-c-divider);
+  border-radius: 0.4rem;
+  background: var(--rp-c-bg-soft);
+  color: var(--rp-c-text-1);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+
+.github-action + .github-action {
+  margin-left: -1px;
+}
+
+.github-action:first-child {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.github-action:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.github-action:last-child {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.github-action--repository {
+  display: flex;
+  align-items: center;
+  padding-inline: 0.55rem;
+}
+
+.github-action__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.github-action:hover {
+  position: relative;
+  border-color: var(--rp-c-brand);
+  color: var(--rp-c-brand);
+}
+
+.github-action__count {
+  font-variant-numeric: tabular-nums;
+}
