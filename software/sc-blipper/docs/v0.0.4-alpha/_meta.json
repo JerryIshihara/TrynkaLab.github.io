@@ -1,0 +1,12 @@
+[
+  { "type": "file", "name": "index", "label": "Home" },
+  { "type": "file", "name": "installation", "label": "Installation" },
+  { "type": "file", "name": "overview", "label": "Overview and workflows" },
+  { "type": "file", "name": "workflow-cnmf", "label": "Workflow: cNMF" },
+  { "type": "file", "name": "workflow-enrich", "label": "Workflow: enrich" },
+  { "type": "file", "name": "workflow-convert", "label": "Workflow: convert" },
+  { "type": "file", "name": "workflow-ldsc", "label": "Workflow: LDSC" },
+  { "type": "file", "name": "understanding-cnmf-outputs", "label": "Understanding cNMF outputs" },
+  { "type": "file", "name": "cnmf-key-notes", "label": "cNMF key notes" },
+  { "type": "file", "name": "source", "label": "Source snapshot" }
+]
