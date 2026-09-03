@@ -1,0 +1,21 @@
+.software-nav-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.software-nav-title .rp-nav__title__link {
+  width: auto;
+}
+
+.software-nav-title__separator {
+  color: var(--rp-c-divider);
+}
+
+@media (max-width: 480px) {
+  .software-nav-title {
+    gap: 0.4rem;
+  }
+}
