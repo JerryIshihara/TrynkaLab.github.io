@@ -28,7 +28,10 @@ export function Nav(props: NavProps) {
   const hasAppearanceSwitch = isDarkModeSwitchEnabled(
     site.themeConfig.darkMode,
   );
-  const isSoftwareDocs = (site.multiVersion?.versions.length ?? 0) > 0;
+  const softwareVersions = site.multiVersion?.versions ?? [];
+  const isSoftwareDocs = softwareVersions.length > 0;
+  const onlySoftwareVersion =
+    softwareVersions.length === 1 ? softwareVersions[0] : null;
   const softwareBase = site.base;
   const portalBase = softwareBase.replace(/\/software\/[^/]+\/?$/, '/');
 
@@ -64,7 +67,16 @@ export function Nav(props: NavProps) {
         <div className="rp-nav__others">
           <NavMenuDivider />
           <NavLangs />
-          <NavVersions />
+          {onlySoftwareVersion ? (
+            <span
+              className="software-version"
+              aria-label={`Version ${onlySoftwareVersion}`}
+            >
+              {onlySoftwareVersion}
+            </span>
+          ) : (
+            <NavVersions />
+          )}
           {hasRepositoryActions ? <GitHubActions /> : <SocialLinks />}
           {hasAppearanceSwitch && <SwitchAppearance />}
         </div>
