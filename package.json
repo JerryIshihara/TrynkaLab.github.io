@@ -4,15 +4,19 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prebuild": "npm run build:publications",
     "build": "npm run build:portal && npm run build:sc-blipper && npm run build:tglow",
+    "build:publications": "node scripts/build-publications.mjs",
     "build:portal": "rspress build",
     "build:sc-blipper": "rspress build -c software/sc-blipper/rspress.config.ts",
     "build:tglow": "rspress build -c software/tglow/rspress.config.ts",
+    "predev": "npm run build:publications",
     "dev": "rspress dev",
     "preview": "rspress preview"
   },
   "dependencies": {
-    "@rspress/core": "^2.0.19"
+    "@rspress/core": "^2.0.19",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@types/node": "^22.8.1",
