@@ -12,7 +12,7 @@ export default defineConfig({
     darkMode: 'light',
     search: false,
     nav: [
-      { text: 'Team', link: '/team/' },
+      { text: 'About us', link: 'https://www.sanger.ac.uk/group/trynka-group/' },
       { text: 'Publications', link: '/publications/' },
       {
         text: 'Software',
