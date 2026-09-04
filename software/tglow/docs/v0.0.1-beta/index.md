@@ -1,3 +1,8 @@
+---
+title: Trynka Lab
+titleSuffix: '| tglow'
+---
+
 # Introduction
 
 This wiki contains information on how to install, stage, configure and run the `tglow-pipeline`  for analysing HCI imaging plates.
@@ -21,6 +26,5 @@ Additional resources: [FAQ](faq.md) · [Known issues](known-issues.md) · [Optio
 - Parallelisation is done per-well to avoid many short tasks with high overhead (Conda activation, Python startup).
 - The pipeline is field-aware and can handle missing fields across cycles or plates.
 - The pipeline does not perform stitching. If you need stitched images, stitch before running the pipeline and disable flatfield estimation, which does not work on pre-stitched images.
-
 
 

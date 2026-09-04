@@ -1,0 +1,25 @@
+.rp-home-background {
+  display: none;
+}
+
+html:root {
+  --rp-nav-height: 72px;
+  --rp-c-brand: #32164f;
+  --rp-c-brand-light: #633d7c;
+  --rp-c-brand-lighter: #d8c7e3;
+  --rp-c-brand-dark: #28113f;
+  --rp-c-brand-darker: #1e0c30;
+  --rp-c-brand-tint: rgb(50 22 79 / 14%);
+  --rp-c-link: var(--rp-c-brand);
+}
+
+.rp-nav.rp-nav {
+  border-bottom: none;
+}
+
+.card {
+  border: 1px solid var(--rp-c-divider-light);
+  border-radius: var(--rp-radius);
+  background: var(--rp-c-bg);
+  box-shadow: var(--rp-shadow-1);
+}

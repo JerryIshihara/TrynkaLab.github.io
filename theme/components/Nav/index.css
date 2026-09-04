@@ -14,6 +14,17 @@
   color: var(--rp-c-divider);
 }
 
+.software-version {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 8px;
+  color: var(--rp-c-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 @media (max-width: 480px) {
   .software-nav-title {
     gap: 0.4rem;

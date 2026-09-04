@@ -1,0 +1,60 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 20px;
+  background: var(--rp-c-brand);
+}
+
+.site-footer__logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-footer__sanger-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-footer__sanger-logo {
+  display: block;
+  width: auto;
+  height: 2.25rem;
+}
+
+.site-footer__logo-separator {
+  width: 1px;
+  height: 2rem;
+  background: rgb(255 255 255 / 32%);
+}
+
+.site-footer__copyright {
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+@media (min-width: 1280px) {
+  .site-footer {
+    padding-right: max(
+      calc(
+        (
+            100vw - var(--rp-content-max-width) - var(--rp-sidebar-width) -
+              var(--rp-outline-width)
+          ) / 2
+      ),
+      20px
+    );
+    padding-left: max(
+      calc(
+        (
+            100vw - var(--rp-content-max-width) - var(--rp-sidebar-width) -
+              var(--rp-outline-width)
+          ) / 2
+      ),
+      20px
+    );
+  }
+}

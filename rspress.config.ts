@@ -6,13 +6,14 @@ const siteBase = (process.env.SITE_BASE ?? '').replace(/\/$/, '');
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   base: `${siteBase}/`,
+  icon: '/brand/trynka-lab-logo.svg',
   lang: 'en',
   title: 'Trynka Lab',
   themeConfig: {
     darkMode: 'light',
     search: false,
     nav: [
-      { text: 'Team', link: '/team/' },
+      { text: 'About us', link: 'https://www.sanger.ac.uk/group/trynka-group/' },
       { text: 'Publications', link: '/publications/' },
       {
         text: 'Software',
