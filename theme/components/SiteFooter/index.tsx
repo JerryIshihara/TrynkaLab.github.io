@@ -10,11 +10,13 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer__logos">
-        <img
-          className="site-footer__sanger-logo"
-          src={`${site.base}brand/logo-sanger-white.svg`}
-          alt="Wellcome Sanger Institute"
-        />
+        <a className="site-footer__sanger-link" href="https://www.sanger.ac.uk/">
+          <img
+            className="site-footer__sanger-logo"
+            src={`${site.base}brand/logo-sanger-white.svg`}
+            alt="Wellcome Sanger Institute"
+          />
+        </a>
         <span className="site-footer__logo-separator" aria-hidden="true" />
         <Logo variant="white" />
       </div>

@@ -13,6 +13,11 @@
   gap: 1rem;
 }
 
+.site-footer__sanger-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .site-footer__sanger-logo {
   display: block;
   width: auto;
