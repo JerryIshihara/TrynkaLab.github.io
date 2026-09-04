@@ -30,7 +30,7 @@ export function defineSoftwareConfig(slug: SoftwareSlug) {
     description: softwarePackage.description,
     multiVersion: {
       default: softwarePackage.currentVersion,
-      versions: [softwarePackage.currentVersion, 'version-test'],
+      versions: [softwarePackage.currentVersion],
     },
     themeConfig: {
       darkMode: 'light',
