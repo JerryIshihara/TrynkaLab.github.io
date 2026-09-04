@@ -1,3 +1,8 @@
+---
+title: Trynka Lab
+titleSuffix: '| sc-blipper'
+---
+
 Welcome to the sc-blipper wiki!
 
 sc-blipper is a Nextflow pipeline for post-QC analysis of (single cell) RNAseq data optimized for HPC enviroments. The core features include running consensus non-negative matrix factorization (cnmf), preprocessing (gene id/gene name/format conversion, merging), batch correction (harmony (cnmf adaptation), scvi) and gene set enrichment (fgsea, ora) and enrichment of GWAS signals through MAGMA. For enrichment, it comes bundled with common genesets for humans.  
